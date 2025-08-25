@@ -1,0 +1,20 @@
+2025-08-21 22:14:38,978 - INFO: 完成初始点击
+2025-08-21 22:14:44,410 - ERROR: 程序崩溃
+Traceback (most recent call last):
+  File "c:\Work\Github\RAPT-auto-report\test\raptautor1.py", line 82, in autoprint
+    location_CR = pyautogui.locateOnScreen('CreateReport.png')
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyautogui\__init__.py", line 172, in wrapper
+    return wrappedFunction(*args, **kwargs)
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyautogui\__init__.py", line 210, in locateOnScreen
+    return pyscreeze.locateOnScreen(*args, **kwargs)
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyscreeze\__init__.py", line 405, in locateOnScreen
+    retVal = locate(image, screenshotIm, **kwargs)
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyscreeze\__init__.py", line 383, in locate
+    points = tuple(locateAll(needleImage, haystackImage, **kwargs))
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyscreeze\__init__.py", line 231, in _locateAll_opencv
+    needleImage = _load_cv2(needleImage, grayscale)
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyscreeze\__init__.py", line 193, in _load_cv2
+    raise IOError(
+OSError: Failed to read CreateReport.png because file is missing, has improper permissions, or is an unsupported or invalid format
+2025-08-21 22:16:50,463 - INFO: 完成初始点击
+2025-08-21 22:17:40,114 - INFO: 完成初始点击
