@@ -18,3 +18,190 @@ Traceback (most recent call last):
 OSError: Failed to read CreateReport.png because file is missing, has improper permissions, or is an unsupported or invalid format
 2025-08-21 22:16:50,463 - INFO: ÕÍ≥…≥ı ºµ„ª˜
 2025-08-21 22:17:40,114 - INFO: ÕÍ≥…≥ı ºµ„ª˜
+2025-08-25 19:11:07,610 - INFO: ÕÍ≥…≥ı ºµ„ª˜
+2025-08-25 19:11:43,712 - ERROR: ≥Ã–Ú±¿¿£
+Traceback (most recent call last):
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyautogui\__init__.py", line 172, in wrapper
+    return wrappedFunction(*args, **kwargs)
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyautogui\__init__.py", line 204, in locateCenterOnScreen
+    return pyscreeze.locateCenterOnScreen(*args, **kwargs)
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyscreeze\__init__.py", line 447, in locateCenterOnScreen
+    coords = locateOnScreen(image, **kwargs)
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyscreeze\__init__.py", line 405, in locateOnScreen
+    retVal = locate(image, screenshotIm, **kwargs)
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyscreeze\__init__.py", line 383, in locate
+    points = tuple(locateAll(needleImage, haystackImage, **kwargs))
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyscreeze\__init__.py", line 257, in _locateAll_opencv
+    raise ImageNotFoundException('Could not locate the image (highest confidence = %.3f)' % result.max())
+pyscreeze.ImageNotFoundException: Could not locate the image (highest confidence = 0.517)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Work\Github\RAPT-auto-report\test\raptautor1.py", line 94, in autoprint
+    OK_loc = pyautogui.locateCenterOnScreen(ok_img)
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyautogui\__init__.py", line 174, in wrapper
+    raise ImageNotFoundException  # Raise PyAutoGUI's ImageNotFoundException.
+pyautogui.ImageNotFoundException
+2025-08-25 19:59:18,564 - INFO: ÕÍ≥…≥ı ºµ„ª˜
+2025-08-25 20:34:37,022 - INFO: ÕÍ≥…≥ı ºµ„ª˜
+2025-08-25 20:34:37,126 - ERROR:  ß∞‹Õº∆¨: c:\Work\Github\RAPT-auto-report\test\report.png | ¥ÌŒÛ: _locateAll_opencv() got an unexpected keyword argument 'scale'
+2025-08-25 20:34:39,791 - ERROR: ≥Ã–Ú±¿¿£
+Traceback (most recent call last):
+  File "c:\Work\Github\RAPT-auto-report\test\raptautor2.py", line 103, in autoprint
+    pyautogui.leftClick(report_pos)
+UnboundLocalError: local variable 'report_pos' referenced before assignment
+2025-08-25 20:35:28,588 - INFO: ÕÍ≥…≥ı ºµ„ª˜
+2025-08-25 20:35:28,658 - ERROR:  ß∞‹Õº∆¨: c:\Work\Github\RAPT-auto-report\test\report.png | ¥ÌŒÛ: _locateAll_opencv() got an unexpected keyword argument 'scale'
+2025-08-25 20:35:31,400 - ERROR: ≥Ã–Ú±¿¿£
+Traceback (most recent call last):
+  File "c:\Work\Github\RAPT-auto-report\test\raptautor2.py", line 102, in autoprint
+    report_pos = pyautogui.center(location_report)
+UnboundLocalError: local variable 'location_report' referenced before assignment
+2025-08-25 20:36:58,846 - INFO: ÕÍ≥…≥ı ºµ„ª˜
+2025-08-25 20:36:58,895 - ERROR:  ß∞‹Õº∆¨: c:\Work\Github\RAPT-auto-report\test\report.png | ¥ÌŒÛ: _locateAll_opencv() got an unexpected keyword argument 'scale'
+2025-08-25 20:37:09,870 - ERROR: ≥Ã–Ú±¿¿£
+Traceback (most recent call last):
+  File "c:\Work\Github\RAPT-auto-report\test\raptautor2.py", line 102, in autoprint
+    report_pos = pyautogui.center(location_report)
+UnboundLocalError: local variable 'location_report' referenced before assignment
+2025-08-25 20:38:03,858 - ERROR: Á®ãÂ∫èÂ¥©Ê∫É
+Traceback (most recent call last):
+  File "C:\Users\peng-fei.jia\AppData\Local\Temp\ipykernel_2604\1047420639.py", line 17, in get_resource_path
+    base_path = sys._MEIPASS  # PyInstallerÂàõÂª∫ÁöÑ‰∏¥Êó∂ÁõÆÂΩï
+AttributeError: module 'sys' has no attribute '_MEIPASS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\peng-fei.jia\AppData\Local\Temp\ipykernel_2604\1047420639.py", line 71, in autoprint
+    report_img = get_resource_path('report.png')
+  File "C:\Users\peng-fei.jia\AppData\Local\Temp\ipykernel_2604\1047420639.py", line 19, in get_resource_path
+    base_path = os.path.dirname(os.path.abspath(__file__))
+NameError: name '__file__' is not defined
+2025-08-25 20:42:19,097 - INFO: ÕÍ≥…≥ı ºµ„ª˜
+2025-08-25 20:42:19,162 - ERROR:  ß∞‹Õº∆¨: c:\Work\Github\RAPT-auto-report\test\report.png | ¥ÌŒÛ: _locateAll_opencv() got an unexpected keyword argument 'scale'
+2025-08-25 20:42:22,425 - ERROR: ≥Ã–Ú±¿¿£
+Traceback (most recent call last):
+  File "c:\Work\Github\RAPT-auto-report\test\raptautor2.py", line 102, in autoprint
+    report_pos = pyautogui.center(location_report)
+UnboundLocalError: local variable 'location_report' referenced before assignment
+2025-08-25 20:46:19,085 - INFO: ÕÍ≥…≥ı ºµ„ª˜
+2025-08-25 20:46:19,155 - ERROR:  ß∞‹Õº∆¨: c:\Work\Github\RAPT-auto-report\test\report.png | ¥ÌŒÛ: _locateAll_opencv() got an unexpected keyword argument 'scale'
+2025-08-25 20:46:51,876 - ERROR: ≥Ã–Ú±¿¿£
+Traceback (most recent call last):
+  File "c:\Work\Github\RAPT-auto-report\test\raptautor2.py", line 102, in autoprint
+    report_pos = pyautogui.center(location_report)
+UnboundLocalError: local variable 'location_report' referenced before assignment
+2025-08-25 20:53:38,873 - INFO: ÕÍ≥…≥ı ºµ„ª˜
+2025-08-25 20:53:39,036 - ERROR: ±®∏Ê∞¥≈• ∂± ß∞‹ | ¥ÌŒÛ: _locateAll_opencv() got an unexpected keyword argument 'scale' | ΩÿÕº: c:\Work\Github\RAPT-auto-report\test\error_screen.png
+2025-08-25 20:54:55,315 - INFO: ÕÍ≥…≥ı ºµ„ª˜
+2025-08-25 20:54:55,450 - ERROR: ±®∏Ê∞¥≈• ∂± ß∞‹ | ¥ÌŒÛ: _locateAll_opencv() got an unexpected keyword argument 'scale' | ΩÿÕº: c:\Work\Github\RAPT-auto-report\test\error_screen.png
+2025-08-25 20:55:22,126 - INFO: ÕÍ≥…≥ı ºµ„ª˜
+2025-08-25 20:55:22,289 - ERROR: ±®∏Ê∞¥≈• ∂± ß∞‹ | ¥ÌŒÛ: _locateAll_opencv() got an unexpected keyword argument 'scale' | ΩÿÕº: c:\Work\Github\RAPT-auto-report\test\error_screen.png
+2025-08-25 20:55:36,054 - INFO: ÕÍ≥…≥ı ºµ„ª˜
+2025-08-25 20:55:36,181 - ERROR: ±®∏Ê∞¥≈• ∂± ß∞‹ | ¥ÌŒÛ: _locateAll_opencv() got an unexpected keyword argument 'scale' | ΩÿÕº: c:\Work\Github\RAPT-auto-report\test\error_screen.png
+2025-08-25 20:56:08,561 - INFO: ÕÍ≥…≥ı ºµ„ª˜
+2025-08-25 20:56:49,839 - INFO: ÕÍ≥…≥ı ºµ„ª˜
+2025-08-25 20:56:49,994 - ERROR: ±®∏Ê∞¥≈• ∂± ß∞‹ | ¥ÌŒÛ: _locateAll_opencv() got an unexpected keyword argument 'scale' | ΩÿÕº: c:\Work\Github\RAPT-auto-report\test\error_screen.png
+2025-08-25 20:58:07,740 - INFO: ÕÍ≥…≥ı ºµ„ª˜
+2025-08-25 20:58:52,490 - INFO: ÕÍ≥…≥ı ºµ„ª˜
+2025-08-25 20:59:25,118 - INFO: ÕÍ≥…≥ı ºµ„ª˜
+2025-08-25 20:59:25,262 - ERROR: ±®∏Ê∞¥≈• ∂± ß∞‹ | ¥ÌŒÛ: _locateAll_opencv() got an unexpected keyword argument 'scale' | ΩÿÕº: c:\Work\Github\RAPT-auto-report\test\error_screen.png
+2025-08-25 20:59:41,117 - INFO: ÕÍ≥…≥ı ºµ„ª˜
+2025-08-25 20:59:46,635 - ERROR: ≥Ã–Ú±¿¿£
+Traceback (most recent call last):
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyautogui\__init__.py", line 172, in wrapper
+    return wrappedFunction(*args, **kwargs)
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyautogui\__init__.py", line 210, in locateOnScreen
+    return pyscreeze.locateOnScreen(*args, **kwargs)
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyscreeze\__init__.py", line 405, in locateOnScreen
+    retVal = locate(image, screenshotIm, **kwargs)
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyscreeze\__init__.py", line 383, in locate
+    points = tuple(locateAll(needleImage, haystackImage, **kwargs))
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyscreeze\__init__.py", line 257, in _locateAll_opencv
+    raise ImageNotFoundException('Could not locate the image (highest confidence = %.3f)' % result.max())
+pyscreeze.ImageNotFoundException: Could not locate the image (highest confidence = 0.432)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Work\Github\RAPT-auto-report\test\raptautor2.py", line 108, in autoprint
+    location_CR = pyautogui.locateOnScreen(cr_img)
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyautogui\__init__.py", line 174, in wrapper
+    raise ImageNotFoundException  # Raise PyAutoGUI's ImageNotFoundException.
+pyautogui.ImageNotFoundException
+2025-08-25 21:00:13,121 - INFO: ÕÍ≥…≥ı ºµ„ª˜
+2025-08-25 21:00:13,291 - ERROR: ±®∏Ê∞¥≈• ∂± ß∞‹ | ¥ÌŒÛ: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\templmatch.cpp:1168: error: (-215:Assertion failed) (depth == CV_8U || depth == CV_32F) && type == _templ.type() && _img.dims() <= 2 in function 'cv::matchTemplate'
+ | ΩÿÕº: c:\Work\Github\RAPT-auto-report\test\error_screen.png
+2025-08-25 21:00:36,711 - INFO: ÕÍ≥…≥ı ºµ„ª˜
+2025-08-25 21:00:50,455 - INFO: ÕÍ≥…≥ı ºµ„ª˜
+2025-08-25 21:00:55,936 - ERROR: ≥Ã–Ú±¿¿£
+Traceback (most recent call last):
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyautogui\__init__.py", line 172, in wrapper
+    return wrappedFunction(*args, **kwargs)
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyautogui\__init__.py", line 210, in locateOnScreen
+    return pyscreeze.locateOnScreen(*args, **kwargs)
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyscreeze\__init__.py", line 405, in locateOnScreen
+    retVal = locate(image, screenshotIm, **kwargs)
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyscreeze\__init__.py", line 383, in locate
+    points = tuple(locateAll(needleImage, haystackImage, **kwargs))
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyscreeze\__init__.py", line 257, in _locateAll_opencv
+    raise ImageNotFoundException('Could not locate the image (highest confidence = %.3f)' % result.max())
+pyscreeze.ImageNotFoundException: Could not locate the image (highest confidence = 0.432)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Work\Github\RAPT-auto-report\test\raptautor2.py", line 108, in autoprint
+    location_CR = pyautogui.locateOnScreen(cr_img)
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyautogui\__init__.py", line 174, in wrapper
+    raise ImageNotFoundException  # Raise PyAutoGUI's ImageNotFoundException.
+pyautogui.ImageNotFoundException
+2025-08-25 21:01:09,442 - INFO: ÕÍ≥…≥ı ºµ„ª˜
+2025-08-25 21:01:14,976 - ERROR: ≥Ã–Ú±¿¿£
+Traceback (most recent call last):
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyautogui\__init__.py", line 172, in wrapper
+    return wrappedFunction(*args, **kwargs)
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyautogui\__init__.py", line 210, in locateOnScreen
+    return pyscreeze.locateOnScreen(*args, **kwargs)
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyscreeze\__init__.py", line 405, in locateOnScreen
+    retVal = locate(image, screenshotIm, **kwargs)
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyscreeze\__init__.py", line 383, in locate
+    points = tuple(locateAll(needleImage, haystackImage, **kwargs))
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyscreeze\__init__.py", line 257, in _locateAll_opencv
+    raise ImageNotFoundException('Could not locate the image (highest confidence = %.3f)' % result.max())
+pyscreeze.ImageNotFoundException: Could not locate the image (highest confidence = 0.432)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Work\Github\RAPT-auto-report\test\raptautor2.py", line 108, in autoprint
+    location_CR = pyautogui.locateOnScreen(cr_img)
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyautogui\__init__.py", line 174, in wrapper
+    raise ImageNotFoundException  # Raise PyAutoGUI's ImageNotFoundException.
+pyautogui.ImageNotFoundException
+2025-08-25 21:05:02,647 - INFO: ÕÍ≥…≥ı ºµ„ª˜
+2025-08-25 21:05:08,069 - ERROR: ≥Ã–Ú±¿¿£
+Traceback (most recent call last):
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyautogui\__init__.py", line 172, in wrapper
+    return wrappedFunction(*args, **kwargs)
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyautogui\__init__.py", line 210, in locateOnScreen
+    return pyscreeze.locateOnScreen(*args, **kwargs)
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyscreeze\__init__.py", line 405, in locateOnScreen
+    retVal = locate(image, screenshotIm, **kwargs)
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyscreeze\__init__.py", line 383, in locate
+    points = tuple(locateAll(needleImage, haystackImage, **kwargs))
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyscreeze\__init__.py", line 257, in _locateAll_opencv
+    raise ImageNotFoundException('Could not locate the image (highest confidence = %.3f)' % result.max())
+pyscreeze.ImageNotFoundException: Could not locate the image (highest confidence = 0.416)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Work\Github\RAPT-auto-report\test\raptautor2.py", line 108, in autoprint
+    location_CR = pyautogui.locateOnScreen(cr_img)
+  File "C:\Users\peng-fei.jia\AppData\Local\miniforge3\envs\dailypy39\lib\site-packages\pyautogui\__init__.py", line 174, in wrapper
+    raise ImageNotFoundException  # Raise PyAutoGUI's ImageNotFoundException.
+pyautogui.ImageNotFoundException
+2025-08-25 21:05:26,384 - INFO: ÕÍ≥…≥ı ºµ„ª˜

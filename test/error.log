@@ -1,0 +1,28 @@
+2025-08-25 20:38:59,468 - ERROR: 程序崩溃
+Traceback (most recent call last):
+  File "C:\Users\peng-fei.jia\AppData\Local\Temp\ipykernel_27184\1047420639.py", line 17, in get_resource_path
+    base_path = sys._MEIPASS  # PyInstaller创建的临时目录
+AttributeError: module 'sys' has no attribute '_MEIPASS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\peng-fei.jia\AppData\Local\Temp\ipykernel_27184\1047420639.py", line 71, in autoprint
+    report_img = get_resource_path('report.png')
+  File "C:\Users\peng-fei.jia\AppData\Local\Temp\ipykernel_27184\1047420639.py", line 19, in get_resource_path
+    base_path = os.path.dirname(os.path.abspath(__file__))
+NameError: name '__file__' is not defined
+2025-08-25 20:39:52,214 - ERROR: 程序崩溃
+Traceback (most recent call last):
+  File "C:\Users\peng-fei.jia\AppData\Local\Temp\ipykernel_36384\1047420639.py", line 17, in get_resource_path
+    base_path = sys._MEIPASS  # PyInstaller创建的临时目录
+AttributeError: module 'sys' has no attribute '_MEIPASS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\peng-fei.jia\AppData\Local\Temp\ipykernel_36384\1047420639.py", line 71, in autoprint
+    report_img = get_resource_path('report.png')
+  File "C:\Users\peng-fei.jia\AppData\Local\Temp\ipykernel_36384\1047420639.py", line 19, in get_resource_path
+    base_path = os.path.dirname(os.path.abspath(__file__))
+NameError: name '__file__' is not defined
